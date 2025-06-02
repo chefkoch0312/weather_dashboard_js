@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wetter-Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wetter Dashboard</h1>
+      <div class="location-input">
+        <label for="location">Standort:</label>
+        <input type="text" id="location" value="Berlin" />
+        <button id="updateBtn">Aktualisieren</button>
+        <button id="testBtn">Test Verbindung</button>
+        <span class="info">🌍 Ohne API-Key</span>
+      </div>
+
+      <div id="current-weather" class="card">
+        <h2>Aktuelles Wetter</h2>
+        <div id="current-content"></div>
+      </div>
+
+      <div id="forecast" class="card">
+        <h2>Wettervorhersage</h2>
+        <div id="forecast-content"></div>
+      </div>
+
+      <div id="debug" class="card">
+        <h2>Debug-Informationen</h2>
+        <pre id="debug-log"></pre>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

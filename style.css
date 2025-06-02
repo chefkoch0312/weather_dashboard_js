@@ -1,0 +1,80 @@
+/* CSS-Stil für das Wetter-Dashboard (JavaScript-Version) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ecf0f1;
+}
+
+.card {
+  background-color: #34495e;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.location-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.location-input label {
+  font-weight: bold;
+}
+
+.location-input input {
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 150px;
+}
+
+.location-input button {
+  padding: 6px 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.location-input button:hover {
+  background-color: #2980b9;
+}
+
+.location-input .info {
+  margin-left: auto;
+  font-size: 12px;
+  color: #bdc3c7;
+}
+
+.forecast-block {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #2c3e50;
+  border-left: 4px solid #e74c3c;
+}
+
+#debug-log {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #1f2b38;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  color: #ecf0f1;
+}
